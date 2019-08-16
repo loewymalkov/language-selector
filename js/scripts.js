@@ -19,7 +19,7 @@ $(document).ready(function() {
       $("#javascript").show();
       $("#python").hide();
       $("#ruby").hide();
-    } else if ((totalVal >= 6) && (totalval <=9)) {
+    } else if (6 <= totalVal && totalVal <= 9) {
       $("#javascript").hide();
       $("#python").show();
       $("#ruby").hide();
