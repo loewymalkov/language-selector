@@ -1,7 +1,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(207, 216, 224);
+  background-color: rgb(198, 204, 209);
 }
+
 
 #javascript, #ruby, #python {
   font-size: 20px;
