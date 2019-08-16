@@ -21,20 +21,19 @@ $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
     console.log('event');
-    var selectVal = parseInt(document.getElementById("experience"));
-    var selectVal = parseInt(document.getElementById("intent"));
-    var selectVal = parseInt(document.getElementById("application"));
-    var selectVal = parseInt(document.getElementById("interest"));
-    var selectVal = parseInt(document.getElementById("level"));
+    var experienceValue = parseInt($("#experience").val());
+    var intentValue = parseInt($("#intent").val());
+    var applicationValue = parseInt($("#application").val());
+    var interestValue = parseInt($("#interest").val());
+    var levelValue = parseInt($("#level").val());
 
-    var suggestLang = function() {
-      if (selectVal <= 7) {
-        $("#javascript").show();
-      } else if (selectVal >= 8) {
-        $("#python").show();
-      } else if (selectVal >= 26) {
-        $("#ruby").show();
-      }
-    };
+    
+    if (totalVal <= 7) {
+      $("#javascript").show();
+    } else if (totalVal >= 8) {
+      $("#python").show();
+    } else if (totalVal >= 26) {
+      $("#ruby").show();
+    }
   });
 });
