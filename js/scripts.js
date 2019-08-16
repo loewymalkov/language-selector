@@ -1,6 +1,4 @@
 // back end logic
-
-// var totalVal = experienceValue += intentValue += applicationValue += interestValue += levelValue +=
 addVal = function (val1, val2, val3, val4, val5) {
   return val1 += val2 += val3 += val4 += val5;
 }
@@ -17,19 +15,18 @@ $(document).ready(function() {
     let levelValue = parseInt($("#level").val());
     let totalVal = addVal(experienceValue, intentValue, applicationValue, interestValue, levelValue);
     
-
-    if (totalVal <= 5) {
+    if (totalVal <= 5 ) {
       $("#javascript").show();
       $("#python").hide();
       $("#ruby").hide();
-    } else if (totalVal >= 6) {
+    } else if ((totalVal >= 6) && (totalval <=9)) {
+      $("#javascript").hide();
+      $("#python").show();
+      $("#ruby").hide();
+    } else if (totalVal >= 10) {
       $("#javascript").hide();
       $("#python").hide();
-      $("#ruby").hide();
-    } else if (totalVal >= 11) {
-      $("#javascript").hide();
-      $("#python").hide();
-      $("#ruby").hide();
-    }
+      $("#ruby").show();
+    };
   });
 });
