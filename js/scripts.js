@@ -1,11 +1,18 @@
 // back end logic
+
+//this is to convert values from survey into int
+
+var intValues = function {
+  $("form#survey").
+}
 var suggestLang = function {
-  if (value <= 5) {
-    $("#experience").show();
-  } else if (value >=6) {
-    $("#intent").show
+  if (value <= 7) {
+    $("#Noobstuff").show();
+  } else if (value >= 8) {
+    $("#Python").show();
+  } else if (value >= 26) {
+    $("#leetstuff").show();
   }
-   
 };
 
 
@@ -14,6 +21,6 @@ var suggestLang = function {
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
-    
+
   });
 });
