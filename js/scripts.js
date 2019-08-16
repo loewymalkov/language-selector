@@ -1,31 +1,35 @@
 // back end logic
 
 // var totalVal = experienceValue += intentValue += applicationValue += interestValue += levelValue +=
+addVal = function (val1, val2, val3, val4, val5) {
+  return val1 += val2 += val3 += val4 += val5;
+}
 
 
 //front end UI
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
-    var experienceValue = parseInt($("#experience").val());
-    var intentValue = parseInt($("#intent").val());
-    var applicationValue = parseInt($("#application").val());
-    var interestValue = parseInt($("#interest").val());
-    var levelValue = parseInt($("#level").val());
-    var totalVal = experienceValue += intentValue += applicationValue += interestValue += levelValue;
+    let experienceValue = parseInt($("#experience").val());
+    let intentValue = parseInt($("#intent").val());
+    let applicationValue = parseInt($("#application").val());
+    let interestValue = parseInt($("#interest").val());
+    let levelValue = parseInt($("#level").val());
+    let totalVal = addVal(experienceValue, intentValue, applicationValue, interestValue, levelValue);
     
+
     if (totalVal <= 5) {
       $("#javascript").show();
       $("#python").hide();
       $("#ruby").hide();
     } else if (totalVal >= 6) {
       $("#javascript").hide();
-      $("#python").show();
+      $("#python").hide();
       $("#ruby").hide();
     } else if (totalVal >= 11) {
       $("#javascript").hide();
       $("#python").hide();
-      $("#ruby").show();
+      $("#ruby").hide();
     }
   });
 });
