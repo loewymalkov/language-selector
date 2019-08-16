@@ -10,44 +10,45 @@
 <body>
   <div class="container">
     <h1>Please answer the following survey so we may help you pick a programming language to learn</h1>
-    <div class="container">
-      <!-- form survey questions -->
-      <form id="survey">
-        <h3>Question 1: Do you have any prior coding experience?</h3>
-        <select name="form-control" id="experience">
-          <option value="1">Noob</option>
-          <option value="2">Amateur</option>
-          <option value="3">Leet</option>
-        </select>
-        <h3>Question 2: What do you intend to do with this new language?</h3>
-        <select name="form-control" id="intent">
-          <option value="1">Noob</option>
-          <option value="2">Amateur</option>
-          <option value="3">Leet</option>
-        </select>
-        <h3>Question 3: What ring do you got?</h3>
-        <select name="form-control" id="application">
-          <option value="1">Front-end</option>
-          <option value="2">Back-end</option>
-          <option value="3">Both</option>
-        </select>
-        <h3>Question 4: You cool yet?</h3>
-        <select name="form-control" id="interest">
-          <option value="1">Noob</option>
-          <option value="2">Amateur</option>
-          <option value="3">Leet</option>
-        </select>
-        <h3>Question 5: Don't tell anyone you leveled that up, ok? min max builds only</h3>
-        <select name="form-control" id="level">
-          <option value="1">Noob</option>
-          <option value="2">Amateur</option>
-          <option value="3">Leet</option>
-        </select>
-      </form>
-      <button type="submit" class="btn btn-info">SUBMIT</button>
-    </div>
+    <!-- form survey questions -->
+    <form id="survey">
+      <h3>Question 1: Do you have any prior coding experience?</h3>
+      <select name="form-control" id="experience">
+        <option value="1">Noob</option>
+        <option value="2">Amateur</option>
+        <option value="3">Leet</option>
+      </select>
+      <h3>Question 2: What do you intend to do with this new language?</h3>
+      <select name="form-control" id="intent">
+        <option value="1">Noob</option>
+        <option value="2">Amateur</option>
+        <option value="3">Leet</option>
+      </select>
+      <h3>Question 3: What ring do you got?</h3>
+      <select name="form-control" id="application">
+        <option value="1">Front-end</option>
+        <option value="2">Back-end</option>
+        <option value="3">Both</option>
+      </select>
+      <h3>Question 4: You cool yet?</h3>
+      <select name="form-control" id="interest">
+        <option value="1">Noob</option>
+        <option value="2">Amateur</option>
+        <option value="3">Leet</option>
+      </select>
+      <h3>Question 5: Don't tell anyone you leveled that up, ok? min max builds only</h3>
+      <select name="form-control" id="level">
+        <option value="1">Noob</option>
+        <option value="2">Amateur</option>
+        <option value="3">Leet</option>
+      </select>
+    </form>
+    <button type="submit" class="btn btn-info">SUBMIT</button>
     <div id="output">
       <!-- this is where the result of the survey will display -->
+      <p id="javascript">You should learn <strong>javascript</strong></p>
+      <p id="python">You should learn <strong>python</strong></p>
+      <p id="ruby">You should learn <strong>ruby</strong></p>
     </div>
   </div>
 </body>
