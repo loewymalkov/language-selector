@@ -12,8 +12,8 @@ $(document).ready(function() {
     let intentValue = parseInt($("#intent").val());
     let applicationValue = parseInt($("#application").val());
     let interestValue = parseInt($("#interest").val());
-    let levelValue = parseInt($("#level").val());
-    let totalVal = addVal(experienceValue, intentValue, applicationValue, interestValue, levelValue);
+    let syntaxValue = parseInt($("#syntax").val());
+    let totalVal = addVal(experienceValue, intentValue, applicationValue, interestValue, syntaxValue);
     
     if (totalVal <= 5 ) {
       $("#javascript").show();

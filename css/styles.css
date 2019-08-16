@@ -1,5 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(207, 216, 224);
 }
 
 #javascript, #ruby, #python {
@@ -7,6 +8,9 @@ body {
   text-align: center;
   margin-top: 2em;
   display: none;
+  border: 20px black;
+  background: rgb(255, 255, 255);
+  padding:  1em;
 }
 
 button {
